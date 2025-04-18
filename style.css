@@ -8,92 +8,92 @@ body {
     color: #FFFFFF;
     
     text-align: center;
-  }
+}
 
-  .fresk {
+.fresk {
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: opacity 0.5s ease-in-out, visibility 0.5s;
-  }
+}
   
-  h1 {
+h1 {
     font-family: 'Arial';
     font-size: 28px;
     color: pink;
     
     margin-bottom: 8px;
-  }
+}
 
-  .hidden {
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: pink;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.display {
+  width: 310px;
+  height: 80px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: pink;
+}
+  
+.display div, .display p {
+  margin: 0;
+} 
+  
+#contador {
+  width: 200px;
+  height: 40px;
+
+  margin-top: 8px;
+  
+  font-weight: 600;
+  color: pink;
+  background-color: #F5EBE0;
+  border-radius: 8px;
+  border: 2px solid #F5EBE0;
+}
+  
+p {
+  padding-top: 4px;
+  font-family: 'Arial';
+  font-size: 13px;
+}
+
+.ass {
+  font-size: 8px;
+  font-weight: 600;
+  color: pink;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  animation: cair linear infinite;
+}
+
+@keyframes cair {
+  from {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100vh);
     opacity: 0;
-    visibility: hidden;
- }
-
-    .button {
-        cursor: pointer;
-        padding: 10px 20px;
-        background: pink;
-        color: white;
-        border: none;
-        font-size: 16px;
-        margin: 10px;
-    }
-  
-  .display {
-    width: 310px;
-    height: 80px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    background-color: pink;
   }
-  
-  .display div, .display p {
-    margin: 0;
-  } 
-  
-  #contador {
-    width: 200px;
-    height: 40px;
-  
-    margin-top: 8px;
-    
-    font-weight: 600;
-    color: pink;
-    background-color: #F5EBE0;
-    border-radius: 8px;
-    border: 2px solid #F5EBE0;
-  }
-  
-  p {
-    padding-top: 4px;
-    font-family: 'Arial';
-    font-size: 13px;
-  }
-
-  .ass {
-    font-size: 8px;
-    font-weight: 600;
-    color: pink;
-  }
-  
-  .emoji {
-    position: absolute;
-    font-size: 2rem;
-    top: 0;
-    animation: cair linear infinite;
-  }
-  
-  @keyframes cair {
-    from {
-      transform: translateY(-100px);
-      opacity: 1;
-    }
-    to {
-      transform: translateY(100vh);
-      opacity: 0;
-    }
-  }
+}
