@@ -1,4 +1,4 @@
-let dataAlvo = new Date("2025-04-07T13:00:00").getTime();
+let dataAlvo = new Date("2025-04-22T13:00:00").getTime();
 
         function atualizarContagem() {
             let agora = new Date().getTime();
